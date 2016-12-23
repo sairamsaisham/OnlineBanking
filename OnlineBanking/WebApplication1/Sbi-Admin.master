@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Sbi-Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+<link type="text/css" rel="stylesheet" href="./CSS/style.css">
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="header">
+            <asp:Image ID="BankLogo" runat="server" BorderWidth="1px" Height="70px" ImageUrl="~/Images/sbi.gif" Width="240px" />
+            <div id="nav">
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">OnlineBanking</a></li>
+  <li><a href="#news">Apply</a></li>
+   <li><a href="#news">Login</a></li>
+  <li><a href="#contact">ContactUs</a></li>
+  <li><a class="active" href="#about">About</a></li>
+</ul>
+
+               
+            
+            </div>
+
+        </div>
+        <div>
+         <asp:ContentPlaceHolder id="MainContentPlaceHolder" runat="server">
+        
+            
+        
+        </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">
+
+                    <strong>Copyright 2016 State Bank of India</strong>
+
+            </div>
+
+    </form>
+</body>
+</html>
