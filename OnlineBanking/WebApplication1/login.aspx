@@ -1,48 +1,36 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Sbi-Admin.master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="WebApplication1.login" %>
+<%@ Register src="login.ascx" tagname="login" tagprefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-            border-style: solid;
-            border-width: 1px;
-        }
-        .auto-style2 {
-            width: 100%;
-            background-color: #308BE4;
-        }
+    .auto-style1 {
+        width: 100%;
+        border-style: solid;
+        border-width: 1px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
     <table align="center" cellpadding="2" class="auto-style1">
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>
-                <table align="center" class="auto-style2">
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>UserName:<input id="Text1" type="text" /></td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-    </table>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/image4.jpg" />
+        </td>
+        <td>
+            <uc1:login ID="login1" runat="server" />
+        </td>
+        <td>
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/image5.jpg" />
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
 </asp:Content>

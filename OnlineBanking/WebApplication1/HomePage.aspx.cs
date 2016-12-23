@@ -11,4 +11,9 @@ public partial class HomePage : System.Web.UI.Page
     {
 
     }
+
+    protected void MultiView1_ActiveViewChanged(object sender, EventArgs e)
+    {
+
+    }
 }

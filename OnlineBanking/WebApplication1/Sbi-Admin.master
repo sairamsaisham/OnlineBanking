@@ -18,10 +18,10 @@
             <asp:Image ID="BankLogo" runat="server" BorderWidth="1px" Height="70px" ImageUrl="~/Images/sbi.gif" Width="240px" />
             <div id="nav">
 <ul>
-  <li><a href="#home">Home</a></li>
+  <li><a href="HomePage.aspx">Home</a></li>
   <li><a href="#news">OnlineBanking</a></li>
   <li><a href="#news">Apply</a></li>
-   <li><a href="#news">Login</a></li>
+   <li><a href="login.aspx">Login</a></li>
   <li><a href="#contact">ContactUs</a></li>
   <li><a class="active" href="#about">About</a></li>
 </ul>

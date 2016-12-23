@@ -67,7 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HomePage.aspx" />
+    <Content Include="Images\image1.jpg" />
+    <Content Include="Images\image2.jpg" />
+    <Content Include="Images\image3.jpg" />
     <Content Include="Images\image4.jpg" />
+    <Content Include="Images\image5.jpg" />
+    <Content Include="login.ascx" />
     <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="Sbi-Admin.master" />
@@ -79,12 +84,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="test\testMultiView.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.ascx.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.ascx.designer.cs">
+      <DependentUpon>login.ascx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
