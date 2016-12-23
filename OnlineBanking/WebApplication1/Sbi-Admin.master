@@ -19,11 +19,9 @@
             <div id="nav">
 <ul>
   <li><a href="HomePage.aspx">Home</a></li>
-  <li><a href="#news">OnlineBanking</a></li>
-  <li><a href="#news">Apply</a></li>
-   <li><a href="login.aspx">Login</a></li>
+  <li><a href="login.aspx">OnlineBanking</a></li>
   <li><a href="#contact">ContactUs</a></li>
-  <li><a class="active" href="#about">About</a></li>
+  <li><a href="#about">About</a></li>
 </ul>
 
                

@@ -6,10 +6,7 @@
         background-color: #308BE4;
         color:white;
     }
-    .auto-style3 {
-        height: 26px;
-    }
-</style>
+    </style>
             <table align="center" class="auto-style2">
                 <tr>
                     <td>Enter Your Account Username and Password</td>
@@ -36,7 +33,10 @@
                 </tr>
                 <tr>
                     <td style="text-align: center">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="text-align: center" Text="Login" />
+                        &nbsp;
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="New User.aspx">    New User</asp:HyperLink>
                     </td>
                 </tr>
             </table>

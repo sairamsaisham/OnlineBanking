@@ -16,11 +16,8 @@
     <table class="auto-style1">
         <tr>
             <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
             <td>
     
     <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="1" OnActiveViewChanged="MultiView1_ActiveViewChanged">
@@ -51,13 +48,8 @@
         </asp:View>
     </asp:MultiView>
             </td>
-            <td>
-                <uc1:login ID="login1" runat="server" />
-            </td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
     </table>

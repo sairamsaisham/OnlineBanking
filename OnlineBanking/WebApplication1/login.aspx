@@ -7,6 +7,15 @@
         border-style: solid;
         border-width: 1px;
     }
+    .auto-style4 {
+        font-size: large;
+    }
+    .auto-style5 {
+        font-size: small;
+    }
+    .auto-style6 {
+        height: 107px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
@@ -28,9 +37,13 @@
         </td>
     </tr>
     <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td class="auto-style6"></td>
+        <td class="auto-style6"><span class="auto-style4"><strong>Why Online Banking?</strong></span><strong><br class="auto-style4" />
+            </strong><span class="auto-style5">1. Banking from anywhere.</span><br class="auto-style5" />
+            <span class="auto-style5">2. bla bla bla</span><br class="auto-style5" />
+            <span class="auto-style5">3. bla bla bla</span><br class="auto-style5" />
+            <span class="auto-style5">4. bla bla bla</span></td>
+        <td class="auto-style6"></td>
     </tr>
 </table>
 </asp:Content>
