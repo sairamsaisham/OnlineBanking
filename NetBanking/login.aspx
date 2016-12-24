@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/sbi-Admin.master" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="login" %>
 
-<%@ Register src="http://localhost:62239/login.ascx" tagname="login" tagprefix="uc1" %>
 <%@ Register src="controls/login.ascx" tagname="login" tagprefix="uc2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
