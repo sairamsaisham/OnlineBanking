@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="WebApplication1.client.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<style type="text/css">
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dodgerblue;
+    height:50px;
+}
+
+ulm {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: dodgerblue;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+lmi a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+lmi a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.footer{
+    background-color:dodgerblue;
+    position:static;
+    bottom:0px;
+    float: left;
+    color:white;
+    width:100%;
+}
+
+    </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <div id="header">
+            <asp:Image ID="BankLogo" runat="server" BorderWidth="1px" Height="70px" ImageUrl="~/Images/sbi.gif" Width="240px" />
+            <div id="nav">
+                <ul>
+                  <li><a href="../HomePage.aspx">Home</a></li>
+                  <li><a href="../login.aspx">OnlineBanking</a></li>
+                  <li><a href="#contact">ContactUs</a></li>
+                  <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="left-nav-bar">
+          <ulm>
+              <lmi><b href="#acount">Account details</b></lmi>
+              <lmi><b href="#acount">Mini statement</b></lmi>
+              <lmi><b href="#transfer">Transfer</b></lmi>
+          </ulm>
+          <asp:ContentPlaceHolder id="MainContentPlaceHolder" runat="server">
+          </asp:ContentPlaceHolder>
+       </div>                    
+        </form>
+            <div class="footer">
+                 <strong>Copyright 2016 State Bank of India</strong>
+            </div>
+</body>
+</html>
