@@ -1,4 +1,13 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="login.ascx.cs" Inherits="controls_login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/sbi-Admin.master" AutoEventWireup="true" CodeFile="AdminLogin.aspx.cs" Inherits="AdminLogin" %>
+
+<%@ Register Src="~/controls/login.ascx" TagPrefix="uc1" TagName="login" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+  
 <style type="text/css">
 
 
@@ -8,6 +17,13 @@
         color:white;
     }
     </style>
+    <div>
+    <br />
+
+    <br />
+
+    <br />
+
             <table align="center" class="auto-style2">
                 <tr>
                     <td>Enter Your Account Username and Password</td>
@@ -37,9 +53,17 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="text-align: center" Text="Login" />
                         &nbsp;
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/NewUser.aspx">New User</asp:HyperLink>
-                    </td>
+                                           </td>
                 </tr>
             </table>
         
+    <br />
+    <br />
+
+    <br />
+
+    </div>
+      
+
+</asp:Content>
 
