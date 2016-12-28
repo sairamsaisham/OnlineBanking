@@ -79,7 +79,6 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="bin\WebApplication1.dll" />
     <Content Include="bin\WebApplication1.pdb" />
-    <Content Include="client\ClientHome.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="Images\image1.jpg" />
     <Content Include="Images\image2.jpg" />
@@ -114,13 +113,6 @@
     </Compile>
     <Compile Include="admins\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
-    </Compile>
-    <Compile Include="client\ClientHome.aspx.cs">
-      <DependentUpon>ClientHome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="client\ClientHome.aspx.designer.cs">
-      <DependentUpon>ClientHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="client\User.master.cs">
       <DependentUpon>User.master</DependentUpon>

@@ -37,7 +37,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="text-align: center" Text="Login" />
                         &nbsp;
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="NewUser.aspx">    New User</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="New User.aspx">    New User</asp:HyperLink>
                     </td>
                 </tr>
             </table>
