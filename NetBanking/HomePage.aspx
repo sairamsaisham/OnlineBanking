@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/sbi-Admin.master" AutoEventWireup="true" CodeFile="HomePage.aspx.cs" Inherits="HomePage" %>
 
-<%@ Register src="login.ascx" tagname="login" tagprefix="uc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -10,9 +9,18 @@
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     
+        <br />   
+     <br />
+    <div>
+        <h4>Select Login</h4>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/login.aspx">Customer Login</asp:HyperLink>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AdminLogin.aspx">Admin Login</asp:HyperLink>
+    </div>
     <br />
+        <br />
+        <br />
     <table class="auto-style1">
         <tr>
             <td>&nbsp;</td>
@@ -54,20 +62,6 @@
         </tr>
     </table>
      <br />
-    <div>
-        <table>
-            <tr>
-                <td style="color:green"><strong>Select Login</strong></td>
-            </tr>
-            <tr>
-                <td>
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                </td>
-                <td>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/login.aspx">Customer Login &nbsp; &nbsp;</asp:HyperLink></td>
-                <td><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AdminLogin.aspx"> &nbsp; &nbsp;Admin Login</asp:HyperLink></td>
-            </tr>
-        </table>
-    </div>
+  
 </asp:Content>
 

@@ -1,6 +1,7 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="sbi-Admin.master.cs" Inherits="sbi_Admin" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="sbh-Admin.master.cs" Inherits="sbh_Admin" %>
 
 <!DOCTYPE html>
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -44,13 +45,12 @@ li a {
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/sbilogo.png" />
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/sbhlogo.jpg" />
 
         <br />
 <ul>
-  <li><a href="HomePage.aspx">Home</a></li>
-  <li><a href="#OnlineBanking">OnlineBanking</a></li>
-    
+  <li><a href="http://localhost:62239/HomePage.aspx">Home</a></li>
+  <li><a href="http://localhost:62239/login.aspx">OnlineBanking</a></li>
   <li><a href="#contact">ContactUs</a></li>
   <li><a href="#about">About</a></li>
 </ul>
@@ -64,9 +64,7 @@ li a {
         </asp:ContentPlaceHolder>
             <div class="footer">
 
-                    <strong>Copyright 2016 State Bank of India</strong>
-
-            </div>
+                    <strong>Copyright 2016 State Bank of Hyderabad</strong></div>
 
     </div>
     </form>

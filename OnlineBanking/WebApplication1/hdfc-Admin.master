@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="sbi-Admin.master.cs" Inherits="sbi_Admin" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="hdfc-Admin.master.cs" Inherits="hdfc_Admin" %>
 
 <!DOCTYPE html>
 
@@ -44,13 +44,13 @@ li a {
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/sbilogo.png" />
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/Hdfclogo.jpg" />
+         <asp:Image ID="Image2" runat="server" ImageUrl="~/images/banner.jpg" />
 
         <br />
 <ul>
-  <li><a href="HomePage.aspx">Home</a></li>
-  <li><a href="#OnlineBanking">OnlineBanking</a></li>
-    
+  <li><a href="http://localhost:62239/HomePage.aspx">Home</a></li>
+  <li><a href="http://localhost:62239/login.aspx">OnlineBanking</a></li>
   <li><a href="#contact">ContactUs</a></li>
   <li><a href="#about">About</a></li>
 </ul>
@@ -64,9 +64,7 @@ li a {
         </asp:ContentPlaceHolder>
             <div class="footer">
 
-                    <strong>Copyright 2016 State Bank of India</strong>
-
-            </div>
+                    <strong>Copyright 2016 HDFC BANK</strong></div>
 
     </div>
     </form>
