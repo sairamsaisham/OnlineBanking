@@ -74,15 +74,20 @@ lmi a:hover {
                 </ul>
             </div>
         </div>
-        <div id="left-nav-bar">
-          <ulm>
-              <lmi><b href="#acount">Account details</b></lmi>
-              <lmi><b href="#acount">Mini statement</b></lmi>
-              <lmi><b href="#transfer">Transfer</b></lmi>
-          </ulm>
+        <table>
+            <tr>
+                <td>
+                    Account details
+                </td>
+             </tr>
+            <tr>
+                <td>       
+                    Mini statement
+                </td>
+          </tr>
           <asp:ContentPlaceHolder id="MainContentPlaceHolder" runat="server">
           </asp:ContentPlaceHolder>
-       </div>                    
+       </table>                    
         </form>
             <div class="footer">
                  <strong>Copyright 2016 State Bank of India</strong>

@@ -48,8 +48,8 @@ li a {
 
         <br />
 <ul>
-  <li><a href="http://localhost:62239/HomePage.aspx">Home</a></li>
-  <li><a href="http://localhost:62239/login.aspx">OnlineBanking</a></li>
+  <li><a href="HomePage.aspx">Home</a></li>
+  <li><a href="login.aspx">OnlineBanking</a></li>
   <li><a href="#contact">ContactUs</a></li>
   <li><a href="#about">About</a></li>
 </ul>
