@@ -17,7 +17,10 @@
                         <table>
                             <tr>
                                 <td style="width:50px">Username:</td>
-                                   <td><input id="Text1" type="text" /></td>
+                                   <td>
+                                      
+                                       <asp:TextBox ID="txtUserLoginEmail" runat="server"></asp:TextBox>
+                                   </td>
                             </tr>
                         </table>
                     </td>
@@ -27,7 +30,9 @@
                         <table>
                             <tr>
                                 <td style="width:50px">Password:</td>
-                                <td> <input id="Text2" type="text" /></td>
+                                <td> 
+                                    <asp:TextBox ID="txtUserPwd" TextMode="Password" runat="server"></asp:TextBox>
+                                </td>
                             </tr>
                         </table>
                     </td>

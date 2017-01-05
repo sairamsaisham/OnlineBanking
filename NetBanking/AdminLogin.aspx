@@ -33,7 +33,10 @@
                         <table>
                             <tr>
                                 <td style="width:50px">Username:</td>
-                                   <td><input id="Text1" type="text" /></td>
+                                   <td>
+                                          <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                       </td>
+
                             </tr>
                         </table>
                     </td>
@@ -43,7 +46,11 @@
                         <table>
                             <tr>
                                 <td style="width:50px">Password:</td>
-                                <td> <input id="Text2" type="text" /></td>
+                                <td>
+                                    <asp:TextBox ID="TextBox2" TextMode="Password" runat="server"></asp:TextBox>
+                                 
+
+                                </td>
                             </tr>
                         </table>
                     </td>
@@ -51,7 +58,7 @@
                 <tr>
                     <td style="text-align: center">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="text-align: center" Text="Login" />
+                        <asp:Button ID="Button1" runat="server"  OnClick="Button1_Click" style="text-align: center" Text="Login" />
                         &nbsp;
                                            </td>
                 </tr>

@@ -12,15 +12,10 @@
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <asp:DropDownList ID="ddlBankList" runat="server">
-                                <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                <asp:ListItem Value="1">SBI</asp:ListItem>
-                                <asp:ListItem Value="2">HDFC</asp:ListItem>
-                                <asp:ListItem Value="3">SBH</asp:ListItem>
-
-                            </asp:DropDownList>
-                           
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          
+                             <asp:Image ID="Image1" runat="server" Height="100" Width="150" ImageAlign="Left" onclick="window.location='HomePage.aspx'" ImageUrl="~/images/sbilogo.png"
+                                 />  
                         </p>
                         <br />
                         <br />
@@ -32,13 +27,6 @@
 
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-                         <asp:Button ID="btnButton" runat="server" Text="Submit" OnClick="btnButton_Click" />
-                       <%-- <h4 class="heading">Select Login</h4>
-                        <p>
-                            <a href="Login.aspx" target="_blank">Customer Login</a>&nbsp;&nbsp;&nbsp;
-                             <a href="AdminLogin.aspx" target="_blank">Admin Login</a>
-                        </p>--%>
                     </div>
                 </div>
 </asp:Content>

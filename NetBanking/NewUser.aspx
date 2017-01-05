@@ -27,7 +27,7 @@
         </tr>
         <tr>
             <td class="auto-style2">&nbsp;</td>
-            <td>Account number<asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="RequiredFieldValidator" ForeColor="#FF3300" GroupValidation="vsubmit" ControlToValidate="txtAccountNo">*</asp:RequiredFieldValidator>
+            <td>Account number(6)<asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="RequiredFieldValidator" ForeColor="#FF3300" GroupValidation="vsubmit" ControlToValidate="txtAccountNo">*</asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtAccountNo" ErrorMessage="6 numbers" ForeColor="Red" ValidationExpression="\d{6}(-\d{6})?"></asp:RegularExpressionValidator>
             </td>
             <td>
