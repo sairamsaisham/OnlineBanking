@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ClientHome.master.cs" Inherits="sbi_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dodgerblue;
+    height:50px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footer{
+    background-color:dodgerblue;
+    position:static;
+    bottom:0px;
+    float: left;
+    color:white;
+    width:100%;
+
+}
+        .auto-style1 {
+            width: 200px;
+            height: 50px;
+            border-style: solid;
+            border-width: 2px;
+            background-color: dodgerblue;
+            color: white;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/sbilogo.png" />
+
+        <br />
+<ul>
+  <li><a href="ClientHomePage.aspx">Home</a></li>
+  <li><a href="#OnlineBanking">OnlineBanking</a></li>
+    
+  <li><a href="#contact">ContactUs</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+        <table>
+            <tr>
+                <td style="width:200px">
+
+
+                    <table cellpadding="2" class="auto-style1">
+                        <tr>
+                            <td class="auto-style2">
+                                <asp:LinkButton ID="btnAcntStmt" runat="server"  PostBackUrl="~/client/AcntStmt.aspx">Account Statement</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style2">
+                                <asp:LinkButton ID="btnMiniStmt" runat="server">Mini Statement</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style2">
+                                <asp:LinkButton ID="btnFundTr" runat="server">Fund Transfer</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style2">
+                                <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </td>
+                <td>
+       
+
+                </td>
+            </tr>
+        </table>
+
+         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+            <div class="footer">
+                    <strong>Copyright 2016 State Bank of India</strong>
+            </div>
+    </div>
+    </form>
+</body>
+</html>
