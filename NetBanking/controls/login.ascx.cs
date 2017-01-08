@@ -20,5 +20,6 @@ public partial class controls_login : System.Web.UI.UserControl
     {
         string query = "select * from tblNewUser where Email='"+ txtUserLoginEmail.Text +"' and Password='"+ txtUserPwd.Text +"'";
         dt = Database.GetData(query);
+        Response.Redirect("UserHomePage.aspx");
     }
 }

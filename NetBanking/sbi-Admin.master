@@ -8,7 +8,13 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
+header
+{
+     position:absolute;
+    left:0; right:0;
+      background-color: dodgerblue;
 
+}
 
 ul {
     list-style-type: none;
@@ -33,20 +39,24 @@ li a {
 
 .footer{
     background-color:dodgerblue;
-    position:static;
+    /*position:static;
     bottom:0px;
     float: left;
-    color:white;
-    width:100%;
+   
+    width:100%;*/
+     color:white;
+     position:absolute;
+    left:0; right:0;
 
 }</style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+
         <asp:Image ID="Image1" runat="server" ImageUrl="~/images/sbilogo.png" />
 
         <br />
+   <div>   
 <ul>
   <li><a href="HomePage.aspx">Home</a></li>
   <li><a href="#OnlineBanking">OnlineBanking</a></li>
@@ -56,7 +66,7 @@ li a {
 </ul>
 
                
-            
+             
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
             
@@ -68,7 +78,7 @@ li a {
 
             </div>
 
-    </div>
+   </div>
     </form>
 </body>
 </html>

@@ -1,0 +1,15 @@
+﻿body {
+}
+
+.sidebar
+{
+width:200px;
+color:#00008B;
+background-color:darkgray;
+}
+.content{
+    position:center;
+    margin-left:200px;
+    margin-top:0;
+}
+
