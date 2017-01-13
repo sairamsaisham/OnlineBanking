@@ -16,13 +16,22 @@ public partial class AdminApprovals : System.Web.UI.Page
         {
             string query = "select * from tblNewUser where Status='Pending'";
             dt=Database.GetData(query);
-            dt.Columns.Add("Approve", typeof(string));
-            for(int i=0;i<dt.Rows.Count;i++)
-            {
-                
-                dt.Rows[i]["Approve"]= "Approve";
+            if (dt.Rows.Count > 0) {
+                dt.Columns.Add("Approve", typeof(string));
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
 
+                    dt.Rows[i]["Approve"] = "Approve";
+
+                }
             }
+            else
+            {
+                dt.Rows.Add();
+                dt.Columns.Add("Approve", typeof(string));
+                dt.Rows[0]["Approve"] = "All approved";
+            }
+            
             gvUserList.DataSource = dt;
             gvUserList.DataBind();
         }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/sbi-Admin.master" AutoEventWireup="true" CodeFile="AdminLogin.aspx.cs" Inherits="AdminLogin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/sbi-Admin.master" AutoEventWireup="true" CodeFile="AdminLogin.aspx.cs" Inherits="AdminLogin" %>
 
 <%@ Register Src="~/controls/login.ascx" TagPrefix="uc1" TagName="login" %>
 

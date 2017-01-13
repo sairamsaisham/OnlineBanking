@@ -10,38 +10,26 @@
             border-width: 3px;
             padding: 1px 4px;
         }
+    .auto-style4 {
+        border-style: solid;
+        border-width: 3px;
+        padding: 1px 4px;
+        width: 200px;
+        height: 20px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table>
         <tr>
-            <td class="auto-style1">
-                <table>
-                    <tr>
-                        <td style="width:200px;height:20px;background-color:grey" class="auto-style3">
-                            <asp:LinkButton ID="LinkButton1" runat="server">Approvals</asp:LinkButton>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width:200px;height:20px;background:grey" class="auto-style3">
-                            <asp:LinkButton ID="LinkButton2" runat="server">Users</asp:LinkButton>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width:200px;height:20px;background-color:grey" class="auto-style3">
-                            <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click">Logout</asp:LinkButton>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td style="width:500px">
+           <td style="width:500px">
                 <asp:GridView ID="gvUserList" AutoGenerateColumns="false" runat="server" OnSelectedIndexChanged="gvUserList_SelectedIndexChanged">
                     <Columns>
                     <asp:BoundField  datafield="Account_no" headertext="Account number" >
                         </asp:BoundField>
                     <asp:BoundField  datafield="Account_Name" headertext="Name" >
                         </asp:BoundField>
-                    <asp:HyperLinkField DataTextField="Approve" DataNavigateUrlFields="Id" DataNavigateUrlFormatString="~/AdminApproveConfirm.aspx?Id={0}"
+                    <asp:HyperLinkField DataTextField="Approve" DataNavigateUrlFields="Id" DataNavigateUrlFormatString="~/Admin/AdminApproveConfirm.aspx?Id={0}"
             HeaderText="Approve" ItemStyle-Width = "150" />
 
                     </Columns>
